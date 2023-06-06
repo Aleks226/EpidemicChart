@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Эпидемиологический калькулятор </title>
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="jquery/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+        
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+    </head>
+
+
+    <body>
+        <select id="city">
+            <option value=""> Выбрать </option>
+            <option value="Москва"> Москва </option>
+            <option value="Тула"> Тула </option>
+            <option value="Владивосток"> Владивосток </option>
+        </select>
+        <button id="dowload">Скачать</button>
+        <input type="file" accept="json/*">
+
+        <div id="container" style="width:100%; height:600px;"></div>
+        <div style="display: flex; justify-content: center;">
+            <div id="box">
+                <div id="box-small">
+                    <label for="N">Размер населения</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="N"></div>
+                    <div id="slider" name="N"></div>
+                </div>
+            
+                <div id="box-small">
+                    <label for="k">Начальное кол-во заражённых</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="k"></div>
+                    <div id="slider" name="k"></div>
+                </div>
+
+                <div id="box-small">
+                    <label for="Pinf">Вероятность заражения(%)</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="Pinf"></div>
+                    <div id="slider" name="Pinf"></div>
+                </div>
+
+                <div id="box-small">
+                    <label for="Mt">Среднее кол-во контактов в день</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="Mt"></div>
+                    <div id="slider" name="Mt"></div>
+                </div>
+            </div>
+
+            <div id="box">
+                <div id="box-small">
+                    <label for="Th">Среднее время выздоровления</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="Th"></div>
+                    <div id="slider" name="Th"></div>
+                </div>
+
+                <div id="box-small">
+                    <label for="Dh">День обнаружения эпидемии</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="Dh"></div>
+                    <div id="slider" name="Dh"></div>
+                </div>
+
+                <div id="box-small">
+                    <label for="Ph">Начальная эфективность лечения(%)</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="Ph"></div>
+                    <div id="slider" name="Ph"></div>
+                </div>
+
+                <div id="box-small">
+                    <label for="Vh">Скорость развития лечения</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="Vh"></div>
+                    <div id="slider" name="Vh"></div>
+                </div>
+            </div>
+
+            <div id="box">
+                <div id="box-small">
+                    <label for="Pd">Вероятность смерти(%)</label>
+                    <div id="custom-handle" class="ui-slider-handle" name="Pd"></div>
+                    <div id="slider" name="Pd"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

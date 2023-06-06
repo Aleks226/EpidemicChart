@@ -1,0 +1,24 @@
+#box-small{
+    float: left;
+    width: 300px;
+    margin: 15px;
+}
+#box{
+    float: left;
+    width: 340px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(213, 218, 218, 0.623);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#slider{
+    margin-top: 8px;
+}
+#custom-handle {
+    float: right;
+    font-weight: bold;
+}
